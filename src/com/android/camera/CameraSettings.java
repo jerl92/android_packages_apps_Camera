@@ -65,6 +65,8 @@ public class CameraSettings {
     public static final String KEY_ISO = "pref_camera_iso_key";
     public static final String KEY_FOCUS_SOUND = "pref_focus_sound";
 
+    static final String RESOLUTION_PROPERTY = "ro.camhal.props";
+
     public static final String EXPOSURE_DEFAULT_VALUE = "0";
 
     public static final int CURRENT_VERSION = 5;
