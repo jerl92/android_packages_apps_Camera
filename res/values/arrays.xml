@@ -83,6 +83,8 @@
                 late for the translation. Since we show the same label as the
                 second item, we just use the second one instead.
         -->
+        <item>@string/pref_camera_picturesize_entry_4000x3000</item>
+        <item>@string/pref_camera_picturesize_entry_4000x2250</item>
         <item>@string/pref_camera_picturesize_entry_3264x2448</item>
         <item>@string/pref_camera_picturesize_entry_3264x1968</item>
         <item>@string/pref_camera_picturesize_entry_3264x1952</item>
@@ -121,6 +123,8 @@
          size to the first one in the list that is also supported by the
          driver -->
     <string-array name="pref_camera_picturesize_entryvalues" translatable="false">
+        <item>4000x3000</item>
+        <item>4000x2250</item>
         <item>3264x2448</item>
         <item>3264x1968</item>
         <item>3264x1952</item>
@@ -200,6 +204,23 @@
         <item>ISO1200</item>
         <item>ISO1600</item>
     </string-array>
+
+    <!-- Camera Preferences for burst modes -->
+    <string-array name="pref_camera_burst_mode_entries" translatable="false">
+        <item>@string/pref_camera_burst_entry_20</item>
+        <item>@string/pref_camera_burst_entry_15</item>
+        <item>@string/pref_camera_burst_entry_10</item>
+        <item>@string/pref_camera_burst_entry_5</item>
+        <item>@string/pref_camera_burst_entry_off</item>
+    </string-array>
+
+    <string-array name="pref_camera_burst_mode_values" translatable="false">
+        <item>20</item>
+        <item>15</item>
+        <item>10</item>
+        <item>5</item>
+        <item>1</item>
+     </string-array>
 
     <!-- Camera Preferences for timer duration -->
     <string-array name="pref_camera_timer_duration_entries" translatable="false">
