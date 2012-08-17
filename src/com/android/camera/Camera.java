@@ -2121,7 +2121,11 @@ public class Camera extends ActivityBase implements FocusManager.Listener,
 
         // If we're previewing already, stop the preview first (this will blank
         // the screen).
-        if (mCameraState != PREVIEW_STOPPED) stopPreview();
+        if (mCameraState != PREVIEW_STOPPED &&
+             (!getResources().getBoolean(R.bool.previewStopsDuringSnapshot) || 
+               mCameraState != SNAPSHOT_IN_PROGRESS) 
+           ) 
+            stopPreview();
 
         setPreviewDisplay(mSurfaceHolder);
         setDisplayOrientation();
